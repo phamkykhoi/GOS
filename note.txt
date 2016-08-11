@@ -1,0 +1,8 @@
+- root folder
+    - assets: keep customers' css, img, js
+    - bs337: keep bootstrap 3.3.7 files
+    - fa463: keep font-awesome 4.6.3 files
+
+- in process:
+    + make common template
+        + make: navbar top

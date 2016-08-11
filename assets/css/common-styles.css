@@ -1,0 +1,103 @@
+a {
+    transition: background 0.35s ease, color 0.35s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* #navbarTop -----------------------------------*/
+#navbarTop {
+    width: 100%;
+    height: 50px;
+    background: #1799a3;
+}
+
+#navbarTop .navbar {
+    border: 0;
+    background: #1799a3;
+}
+
+#navbarTop .navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#navbarTop .navbar .navbar-collapse .navbar-nav a {
+    color: #ffffff;
+}
+
+#navbarTop .navbar .navbar-collapse .navbar-nav a:hover {
+    background: #20aeb9;
+}
+
+#navbarTop .navbar .navbar-collapse .navbar-nav .dropdown-menu a {
+    color: #333;
+}
+
+#navbarTop .navbar .navbar-collapse .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* #navbarTask -----------------------------------*/
+#navbarTask {
+    margin-top: 20px;
+}
+
+#navbarTask ul li {
+    margin-bottom: 5px;
+}
+
+/* #content -----------------------------------*/
+#content {
+    min-height: 350px;
+    margin-top: 20px;
+}
+
+/* #footer -----------------------------------*/
+#footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    background: #1799a3;
+    color: #ffffff;
+}
+
+#footer p {
+    margin: 0 0 2px;
+}
+
+/* #scrollTop -----------------------------------*/
+#scrollTop, #scrollBottom {
+    display: none;
+    border: none;
+    background: #373c43;
+    color: #ffffff;
+    position: fixed;
+    right: 10px;
+}
+
+#scrollTop {
+    bottom: 50px;
+}
+
+#scrollBottom {
+    bottom: 14px;
+}
+
+/* support -----------------------------------*/
+.pagination li a {
+    color: #1799a3;
+}
+
+.pagination .active a {
+    background: #1799a3;
+}

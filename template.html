@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Title Page</title>
+    <title>template</title>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,13 +11,104 @@
     <link rel="stylesheet" href="bs337/css/bootstrap.min.css"/>
     <!-- Font awesome -->
     <link rel="stylesheet" href="fa463/css/font-awesome.min.css"/>
+    <!-- Customers -->
+    <link rel="stylesheet" href="assets/css/common-styles.css"/>
+    <link rel="stylesheet" href="assets/css/common-responsive-styles.css"/>
 </head>
 
 <body>
+
+    <!-- Navbar top -->
+    <div id="navbarTop">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">logo</a>
+                </div>
+        
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Vật tư hàng hóa</a></li>
+                        <li><a href="#">Khách hàng</a></li>
+                        <li><a href="#">Chi nhánh</a></li>
+                        <li><a href="#">Gara</a></li>
+                        <li><a href="#">Báo cáo</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i><b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Phạm kỳ khôi</a></li>
+                                <li><a href="#">Cài đặt</a></li>
+                                <li><a href="#">Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </div><!-- /#navbarTop -->
+
+    <!-- Navbar task -->
+    <div id="navbarTask">
+        <div class="container">
+            <ul class="list-inline">
+                <li>
+                    <a href="#" class="btn btn-info">Nhập kho</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-info">Nhập kho</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-info">Nhập kho</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-info">Nhập kho</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-info">Nhập kho</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-info">Nhập kho</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <div class="container">
+            <div style="height:700px;border:1px solid #bbbbbb;"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="text-center">
+        <p>Thời gian xử lý: 0.5s</p>
+        <p>&copy; Tân phát</p>
+    </div>
+
+    <!-- Scroll button -->
+    <a href="javascript:;" id="scrollTop" class="btn btn-info">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+    <a href="javascript:;" id="scrollBottom" class="btn btn-info">
+        <i class="fa fa-arrow-down"></i>
+    </a>
 
     <!-- jQuery -->
     <script src="assets/js/jquery-1.11.1.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="bs337/js/bootstrap.min.js"></script>
+    <!-- Customers -->
+    <script src="assets/js/common.js"></script>
 </body>
 </html>
