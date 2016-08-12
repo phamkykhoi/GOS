@@ -39,7 +39,7 @@ $(document).ready(function(){
             $('#scrollTop').fadeOut(500);
         }
 
-        if (scrollTop <= height) {
+        if (scrollTop < height) {
             $('#scrollBottom').fadeIn(500);
         } else {
             $('#scrollBottom').fadeOut(500);   

@@ -1,15 +1,15 @@
 /* Customer page --------------------------------*/
 #customer {
     min-height: 300px;
-    padding: 20px;
-    background: #ffffff;
     border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
-    z-index: -1;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);*/
 }
 
 #customer-header {
-    padding-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
     z-index: -1;
 }
 
@@ -27,7 +27,11 @@
 }
 
 #customer-content .section {
+    padding: 10px;
     margin-top: 13px;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
 }
 
 #customer-content .section .title {
@@ -54,6 +58,14 @@
 
 #customer-content .section .info ul li {
     padding: 7px 0;
+}
+
+#customer-content .section .info .info-header {
+    padding: 10px 0 10px 0;
+}
+
+#customer-content .section .info .info-header .btn-group {
+    margin-bottom: 5px;
 }
 
 #customer-content .section .tab-menu {

@@ -1,5 +1,5 @@
 a {
-    transition: background 0.35s ease, color 0.35s ease;
+    transition: background 0.4s ease, color 0.4s ease;
 }
 
 a:hover {
@@ -7,7 +7,7 @@ a:hover {
 }
 
 body {
-    background: #f1f1f1;
+    background: #f3f3f3;
 }
 
 ul {
@@ -25,6 +25,7 @@ ul {
 #navbarTop .navbar {
     border: 0;
     background: #1799a3;
+    border-radius: 0;
     z-index: 9999;
 }
 
@@ -45,16 +46,25 @@ ul {
     background: #ffffff;
 }
 
-#navbarTop .navbar .navbar-collapse .navbar-nav a {
+#navbarTop .navbar .navbar-nav a {
     color: #ffffff;
 }
 
-#navbarTop .navbar .navbar-collapse .navbar-nav a:hover {
+#navbarTop .navbar .navbar-nav a:hover {
     background: #20aeb9;
 }
 
-#navbarTop .navbar .navbar-collapse .navbar-nav .dropdown-menu a {
-    color: #333;
+#navbarTop .navbar .dropdown-menu {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    background: #1799a3;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#navbarTop .navbar .dropdown-menu a {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* #navbarTask -----------------------------------*/
@@ -62,8 +72,34 @@ ul {
     margin-top: 20px;
 }
 
-#navbarTask ul li {
-    margin-bottom: 5px;
+#navbarTask ul {
+    float: left;
+    width: 100%;
+    margin: 0 0 9px 0;
+    padding: 0;
+    border-radius: 4px;
+    list-style: none;
+}
+
+#navbarTask ul > li {
+    float: left;
+}
+
+#navbarTask ul > li > a {
+    float: left;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border-right: 1px solid #eaeaea;
+    background: #ffffff;
+    line-height: 40px;
+    font-weight: 600;
+    color: #777777;
+}
+
+#navbarTask ul > li > a:hover {
+    color: #ffffff;
+    background: #20aeb9;
 }
 
 /* #content -----------------------------------*/

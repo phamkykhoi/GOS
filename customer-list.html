@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>customer-list</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bs337/css/bootstrap.min.css"/>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="fa463/css/font-awesome.min.css"/>
+    <!-- Customers -->
+    <link rel="stylesheet" href="assets/css/common.css"/>
+    <link rel="stylesheet" href="assets/css/common-responsive.css"/>
+    <link rel="stylesheet" href="assets/css/customer.css"/>
+</head>
+
+<body>
+
+    <!-- Navbar top -->
+    <div id="navbarTop">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">logo</a>
+                </div>
+        
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Vật tư hàng hóa</a></li>
+                        <li><a href="#">Khách hàng</a></li>
+                        <li><a href="#">Chi nhánh</a></li>
+                        <li><a href="#">Gara</a></li>
+                        <li><a href="#">Báo cáo</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i><b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Phạm kỳ khôi</a></li>
+                                <li><a href="#">Cài đặt</a></li>
+                                <li><a href="#">Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </div><!-- /#navbarTop -->
+
+    <!-- Navbar task -->
+    <div id="navbarTask">
+        <div class="container-fluid">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-home"> </i> Home</a>
+                </li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập kho</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Xuất kho</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Chuyển kho nội bộ</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Hủy hàng hóa</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Trả lại hàng</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập lại hàng</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập hàng trả lại từ khách</a></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-home"> </i> Home</a>
+                </li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập kho</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Xuất kho</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Chuyển kho nội bộ</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Hủy hàng hóa</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Trả lại hàng</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập lại hàng</a></li>
+                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập hàng trả lại từ khách</a></li>
+            </ul>
+        </div>
+    </div><!-- /#navbarTask
+
+    <!-- Content -->
+    <div id="content">
+        <div class="container-fluid">
+            <div id="customer">
+                <!-- #customer-header -->
+               <!--  <div id="customer-header">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h1>Thông tin khách hàng</h1>
+                            <input type="text" class="form-control" placeholder="Tên khách hàng"/>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="btn-container text-right">
+                                <a href="#" class="btn btn-default">Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- /#customer-header -->
+
+                <!-- #customer-content -->
+                <div id="customer-content">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <form action="">
+                                <div class="section">
+                                    <div class="title">
+                                        <h3>Tìm kiếm khách hàng</h3>
+                                        <a href="javscript:;" class="pull-right">
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="info">
+                                        <div class="form-group">
+                                            <label for="">&nbsp;</label>
+                                            <input type="text" class="form-control" placeholder="Mã hoặc tên khách hàng"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Theo chi nhánh</label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Chọn chi nhánh</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Theo Gara</label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Chọn Gara</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Theo kho hàng</label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Chọn kho hàng</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Theo nhân viên kinh doanh</label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Chọn nhân viên kinh doanh</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Theo chương trình khuyến mãi</label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Chọn chương trình khuyến mãi</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Theo công nợ</label>
+                                            <div class="progress progress-striped progress-sm active">
+                                                <div class="progress-bar" style="width: 60%;">
+                                                    <span class="sr-only">60% Complete</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="section">
+                                <div class="title">
+                                    <h3>QUẢN LÝ KHÁCH HÀNG</h3>
+                                    <a href="javscript:;" class="pull-right">
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+
+                                <div class="info">
+                                    <div class="info-header">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <!-- <h5>DANH SÁCH KHÁCH HÀNG</h5> -->
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="text-right">
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-default" href="javascript:void(0);">
+                                                            <i class="fa fa-plus"></i> Thêm mới
+                                                        </a>
+                                                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-default">
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action One</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action Two</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action Three</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-default" href="javascript:void(0);">
+                                                            <i class="fa fa-sign-out"></i> Import
+                                                        </a>
+                                                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-default">
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action One</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action Two</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action Three</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-default" href="javascript:void(0);">
+                                                            <i class="fa fa-sign-out"></i> Export
+                                                        </a>
+                                                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-default" style="left: -49px;">
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action One</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action Two</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action Three</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-default" href="javascript:void(0);">
+                                                            <i class="fa fa-list"></i>
+                                                        </a>
+                                                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-default" style="left:-93px;">
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action One</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action Two</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">Action Three</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="table-responsive">
+                                            <table class="table table-default table-bordered">
+                                                <thead>
+                                                    <tr class="active">
+                                                        <th class="text-center">STT</th>
+                                                        <th>Mã KH</th>
+                                                        <th>Họ tên</th>
+                                                        <th>Địa chỉ</th>
+                                                        <th>Điện thoại</th>
+                                                        <th>Email</th>
+                                                        <th>Chi nhánh</th>
+                                                        <th>Gara</th>
+                                                        <th>Kho hàng</th>
+                                                        <th>NVKD</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>KH001</td>
+                                                        <td>Nguyễn Văn A</td>
+                                                        <td>Hà Nội</td>
+                                                        <td>0132.123.123</td>
+                                                        <td>aaa@gmail.com</td>
+                                                        <td>Hà Nội</td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                        <td> ... </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="info-footer">
+                                        <div class="text-right">
+                                            <ul class="pagination">
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <!-- /#customer-content -->
+
+                <!-- #customer-footer -->
+                <div id="customer-footer">
+                    
+                </div>
+                <!-- /#customer-footer -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="text-center">
+        <p>Thời gian xử lý: 0.5s</p>
+        <p>&copy; Tân phát</p>
+    </div>
+
+    <!-- Scroll button -->
+    <a href="javascript:;" id="scrollTop" class="btn btn-info">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+    <a href="javascript:;" id="scrollBottom" class="btn btn-info">
+        <i class="fa fa-arrow-down"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="bs337/js/bootstrap.min.js"></script>
+    <!-- Customers -->
+    <script src="assets/js/common.js"></script>
+</body>
+</html>
