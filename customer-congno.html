@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>customer-chinhanh</title>
+    <title>customer-congno</title>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -225,83 +225,223 @@
                         <div class="tab-menu">
                             <ul class="nav nav-pills">
                                 <li><a href="customer-info.html">Lịch sửa mua hàng</a></li>
-                                <li class="active"><a href="customer-chinhanh.html">Chi nhánh</a></li>
+                                <li><a href="customer-chinhanh.html">Chi nhánh</a></li>
                                 <li><a href="customer-nvkd.html">Nhân viên kinh doanh</a></li>
-                                <li><a href="customer-congno.html">Công nợ</a></li>
+                                <li class="active"><a href="customer-congno.html">Công nợ</a></li>
                             </ul>
                         </div>
 
                         <div class="tab-content">
+                            <!-- form -->
+                            <form action="" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Theo nhà cung cấp</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Theo gara</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button class="btn btn-info">Tìm kiếm</button>
+                                        <button class="btn btn-default">Hủy bỏ</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Modal -->
+                            
+                             
+                            <!-- Modal HTML -->
+                            <div id="myVoucher" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h5 class="modal-title">DANH SÁCH CHỨNG TỪ</h5>
+                                            <b>|</b>
+                                            <h5 class="modal-title">Khách hàng: <strong>Nguyễn Văn A</strong></h5>
+                                            <b>|</b>
+                                            <h5 class="modal-title">Chi nhánh: <strong>Hà Nội</strong></h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="" class="form-inline">
+                                                <div class="form-group">
+                                                    Từ <input type="date" class="form-control"/>
+                                                    Đến <input type="date" class="form-control"/>
+                                                    <input type="submit" class="btn btn-info" value="Xem"/>
+                                                    <input type="reset" class="btn btn-default" value="Xóa"/>
+                                                </div>
+                                            </form>
+
+                                            <div class="table-responsive">
+                                                <table class="table table-default table-bordered">
+                                                    <thead>
+                                                        <tr class="active">
+                                                            <th class="text-center">STT</th>
+                                                            <th class="text-center">Ngày</th>
+                                                            <th>Chứng từ</th>
+                                                            <th class="text-center">Mã</th>
+                                                            <th>Diễn giải</th>
+                                                            <th>Đầu kỳ</th>
+                                                            <th>Tăng</th>
+                                                            <th>Giảm</th>
+                                                            <th>Cuối kỳ</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td class="text-center">01/01/2016</td>
+                                                            <td>HBL/HN/18/06_0037</td>
+                                                            <td class="text-center">98KSB</td>
+                                                            <td>...</td>
+                                                            <td>25</td>
+                                                            <td>8</td>
+                                                            <td>15</td>
+                                                            <td>18</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td class="text-center">01/01/2016</td>
+                                                            <td>HBL/HN/18/06_0037</td>
+                                                            <td class="text-center">98KSB</td>
+                                                            <td>...</td>
+                                                            <td>25</td>
+                                                            <td>8</td>
+                                                            <td>15</td>
+                                                            <td>18</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td class="text-center">01/01/2016</td>
+                                                            <td>HBL/HN/18/06_0037</td>
+                                                            <td class="text-center">98KSB</td>
+                                                            <td>...</td>
+                                                            <td>25</td>
+                                                            <td>8</td>
+                                                            <td>15</td>
+                                                            <td>18</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td class="text-center">01/01/2016</td>
+                                                            <td>HBL/HN/18/06_0037</td>
+                                                            <td class="text-center">98KSB</td>
+                                                            <td>...</td>
+                                                            <td>25</td>
+                                                            <td>8</td>
+                                                            <td>15</td>
+                                                            <td>18</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">1</td>
+                                                            <td class="text-center">01/01/2016</td>
+                                                            <td>HBL/HN/18/06_0037</td>
+                                                            <td class="text-center">98KSB</td>
+                                                            <td>...</td>
+                                                            <td>25</td>
+                                                            <td>8</td>
+                                                            <td>15</td>
+                                                            <td>18</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="text-center">
+                                                <ul class="pagination">
+                                                    <li><a href="#">1</a></li>
+                                                    <li class="active"><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- table -->
                             <div class="table-responsive">
                                 <table class="table table-default table-bordered">
                                     <thead>
                                         <tr class="active">
                                             <th class="text-center">STT</th>
-                                            <th class="text-center">Tên chi nhánh</th>
-                                            <th>Địa chỉ</th>
-                                            <th>Số lần mua hàng</th>
-                                            <th>Tổng số hàng đã mua</th>
-                                            <th>Tổng tiền</th>
-                                            <th>Đã thu</th>
-                                            <th>Còn nợ</th>
+                                            <th>Chi nhánh</th>
+                                            <th>Gara</th>
+                                            <th>Tồn đầu kỳ</th>
+                                            <th>Phát sinh tăng</th>
+                                            <th>Phát sinh giảm</th>
+                                            <th>Tồng cuối kỳ</th>
+                                            <th class="text-center">Chứng từ</th>
+                                            
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>AAA</td>
-                                            <td>12 Hồ Tùng Mậu, Từ liêm, Hà Nội</td>
-                                            <td>12</td>
-                                            <td>12</td>
-                                            <td>123,000,000</td>
-                                            <td>100,000,000</td>
-                                            <td>23,000,000</td>
+                                            <td class="text-center">1</td>
+                                            <td>Hà Nội</td>
+                                            <td>Simo smart</td>
+                                            <td>200</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>200</td>
+                                            <td class="text-center"><a href="#myVoucher" role="button" data-toggle="modal">Xem chứng từ</a></td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>AAA</td>
-                                            <td>12 Hồ Tùng Mậu, Từ liêm, Hà Nội</td>
-                                            <td>12</td>
-                                            <td>12</td>
-                                            <td>123,000,000</td>
-                                            <td>100,000,000</td>
-                                            <td>23,000,000</td>
+                                            <td class="text-center">1</td>
+                                            <td>Hà Nội</td>
+                                            <td>Simo smart</td>
+                                            <td>200</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>200</td>
+                                            <td class="text-center"><a href="#myVoucher" role="button" data-toggle="modal">Xem chứng từ</a></td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>AAA</td>
-                                            <td>12 Hồ Tùng Mậu, Từ liêm, Hà Nội</td>
-                                            <td>12</td>
-                                            <td>12</td>
-                                            <td>123,000,000</td>
-                                            <td>100,000,000</td>
-                                            <td>23,000,000</td>
+                                            <td class="text-center">1</td>
+                                            <td>Hà Nội</td>
+                                            <td>Simo smart</td>
+                                            <td>200</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>200</td>
+                                            <td class="text-center"><a href="#myVoucher" role="button" data-toggle="modal">Xem chứng từ</a></td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>AAA</td>
-                                            <td>12 Hồ Tùng Mậu, Từ liêm, Hà Nội</td>
-                                            <td>12</td>
-                                            <td>12</td>
-                                            <td>123,000,000</td>
-                                            <td>100,000,000</td>
-                                            <td>23,000,000</td>
+                                            <td class="text-center">1</td>
+                                            <td>Hà Nội</td>
+                                            <td>Simo smart</td>
+                                            <td>200</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>200</td>
+                                            <td class="text-center"><a href="#myVoucher" role="button" data-toggle="modal">Xem chứng từ</a></td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>AAA</td>
-                                            <td>12 Hồ Tùng Mậu, Từ liêm, Hà Nội</td>
-                                            <td>12</td>
-                                            <td>12</td>
-                                            <td>123,000,000</td>
-                                            <td>100,000,000</td>
-                                            <td>23,000,000</td>
+                                            <td class="text-center">1</td>
+                                            <td>Hà Nội</td>
+                                            <td>Simo smart</td>
+                                            <td>200</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>200</td>
+                                            <td class="text-center"><a href="#myVoucher" role="button" data-toggle="modal">Xem chứng từ</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-
+                            
+                            <!-- pagination -->
                             <div class="text-center">
                                 <ul class="pagination">
                                     <li class="active"><a href="#">1</a></li>

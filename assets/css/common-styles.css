@@ -25,11 +25,24 @@ ul {
 #navbarTop .navbar {
     border: 0;
     background: #1799a3;
+    z-index: 9999;
 }
 
 #navbarTop .navbar .navbar-brand {
     color: #ffffff;
     font-weight: bold;
+}
+
+#navbarTop .navbar .navbar-toggle {
+    border-color: #ffffff;
+}
+
+#navbarTop .navbar .navbar-toggle:hover {
+    background: #1799a3;
+}
+
+#navbarTop .navbar .navbar-toggle .icon-bar {
+    background: #ffffff;
 }
 
 #navbarTop .navbar .navbar-collapse .navbar-nav a {
@@ -42,10 +55,6 @@ ul {
 
 #navbarTop .navbar .navbar-collapse .navbar-nav .dropdown-menu a {
     color: #333;
-}
-
-#navbarTop .navbar .navbar-collapse .navbar-nav .dropdown:hover .dropdown-menu {
-    display: block;
 }
 
 /* #navbarTask -----------------------------------*/
@@ -94,6 +103,10 @@ ul {
 }
 
 /* support -----------------------------------*/
+.pagination {
+    margin: 0;
+}
+
 .pagination li a {
     color: #1799a3;
 }
