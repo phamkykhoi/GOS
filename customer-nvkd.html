@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>customer-nvkd</title>
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!-- Bootstrap CSS -->
+    <title>cus-nvkd</title>
+
+    <!-- Bootstrap, Font-awesome -->
     <link rel="stylesheet" href="bs337/css/bootstrap.min.css"/>
-    <!-- Font awesome -->
     <link rel="stylesheet" href="fa463/css/font-awesome.min.css"/>
+    <!-- Google fonts -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400&subset=latin,vietnamese' rel='stylesheet' type='text/css'> -->
     <!-- Customers -->
+    <link rel="stylesheet" href="assets/css/support.css"/>
     <link rel="stylesheet" href="assets/css/common.css"/>
     <link rel="stylesheet" href="assets/css/common-responsive.css"/>
     <link rel="stylesheet" href="assets/css/customer.css"/>
@@ -19,345 +21,427 @@
 
 <body>
 
-    <!-- Navbar top -->
-    <div id="navbarTop">
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">logo</a>
+    <!-- #menuMobile -->
+    <div id="menuMobile">
+        <h4 class="title">HỆ THỐNG</h4>
+        <nav class="menu" references="menu-system"></nav>
+        <h4 class="title">Nghiệp vụ</h4>
+        <nav class="menu" references="menu-tasks"></nav>
+    </div>
+    <!-- /#menuMobile -->
+
+    <!-- #scrollTop -->
+    <div id="scrollTop">
+        <button class="fa fa-angle-up"></button>
+    </div>
+    <!-- /#scrollTop -->
+
+    <div id="wrapper">
+        <!-- header -->
+        <header>
+            <div class="container">
+                <!-- .logo -->
+                <div class="logo pull-left">
+                    <a href="#" title="">
+                        <img src="assets/img/logo.png" class="img-responsive" alt="">
+                    </a>
                 </div>
-        
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Vật tư hàng hóa</a></li>
-                        <li><a href="#">Khách hàng</a></li>
-                        <li><a href="#">Chi nhánh</a></li>
-                        <li><a href="#">Gara</a></li>
+
+                <!-- .menu-toggle -->
+                <div id="menuMobileToggle" data-display="0" class="pull-right">
+                    <button class="fa fa-bars"></button>
+                </div>
+
+                <!-- .menu -->
+                <nav class="menu pull-right" references="menu-system">
+                    <ul>
+                        <li class="active"><a href="#">Vật tư hàng hóa</a></li>
+                        <li><a href="customer-info.html">Khách hàng</a></li>
+                        <li class="active"><a href="#">Chi nhánh</a></li>
+                        <li><a href="#">Garas</a></li>
                         <li><a href="#">Báo cáo</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-user"></i><b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Phạm kỳ khôi</a></li>
-                                <li><a href="#">Cài đặt</a></li>
-                                <li><a href="#">Đăng xuất</a></li>
+                        <li>
+                            <a href="javascript:;">Nguyễn Xuân Quỳnh  <span class="caret"></span></a>
+                            <ul class="submenu">
+                                <li><a href="#"><i class="fa fa-unlock"> </i> Tài khoản</a></li>
+                                <li><a href="#"><i class="fa fa-wrench"> </i> Cài đặt</a></li>
+                                <li><a href="#"><i class="fa fa-sign-out"> </i> Đăng xuất</a></li>
                             </ul>
                         </li>
                     </ul>
-                </div><!-- /.navbar-collapse -->
+                </nav>
             </div>
-        </nav>
-    </div><!-- /#navbarTop -->
+        </header>
+        <!-- /header -->
 
-    <!-- Navbar task -->
-    <div id="navbarTask">
-        <div class="container-fluid">
-            <ul>
-                <li>
-                    <a href="#"><i class="fa fa-home"> </i> Home</a>
-                </li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập kho</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Xuất kho</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Chuyển kho nội bộ</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Hủy hàng hóa</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Trả lại hàng</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập lại hàng</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập hàng trả lại từ khách</a></li>
-            </ul>
-
-            <ul>
-                <li>
-                    <a href="#"><i class="fa fa-home"> </i> Home</a>
-                </li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập kho</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Xuất kho</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Chuyển kho nội bộ</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Hủy hàng hóa</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Trả lại hàng</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập lại hàng</a></li>
-                <li><a href="#"><i class="fa fa-tasks"> </i> Nhập hàng trả lại từ khách</a></li>
-            </ul>
+        <!-- #tasks -->
+        <div id="tasks">
+            <div class="container">
+                <nav class="menu" references="menu-tasks">
+                    <ul>
+                        <li><a href="#">Nhập kho</a></li>
+                        <li><a href="#">Xuất kho</a></li>
+                        <li><a href="#">Chuyển kho nội bộ</a></li>
+                        <li><a href="#">Hủy hàng hóa</a></li>
+                        <li><a href="#">Trả lại hàng</a></li>
+                        <li><a href="#">Nhập lại hàng</a></li>
+                        <li><a href="#">Nhập kho</a></li>
+                        <li><a href="#">Xuất kho</a></li>
+                        <li><a href="#">Chuyển kho nội bộ</a></li>
+                        <li><a href="#">Hủy hàng hóa</a></li>
+                        <li><a href="#">Trả lại hàng</a></li>
+                        <li><a href="#">Nhập lại hàng</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div><!-- /#navbarTask
+        <!-- /#tasks -->
 
-    <!-- Content -->
-    <div id="content">
-        <div class="container-fluid">
-            <div id="customer">
-                <!-- #customer-header -->
-                <div id="customer-header">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h1>Thông tin khách hàng</h1>
-                            <input type="text" class="form-control" placeholder="Tên khách hàng"/>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="btn-container text-right">
-                                <a href="#" class="btn btn-default">Back</a>
+        <!-- #content -->
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="customer">
+                            <div class="cus-heading" style="display: none;">
+                                <h1>THÔNG TIN KHÁCH HÀNG</h1>
+                                <input type="text" class="input-sm" value="Nguyễn Xuân Quỳnh"/>
+                                <a href="javascript:;" class="btn btn-default btn-sm">Back</a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /#customer-header -->
 
-                <!-- #customer-content -->
-                <div id="customer-content">
-                    <div class="section">
-                        <div class="title">
-                            <h3>Thông tin chung</h3>
-                            <a href="javscript:;" class="pull-right">
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                        </div>
+                            <div class="widget">
+                                <!-- widget-heading -->
+                                <div class="widget-heading">
+                                    <h3 class="title text-uppercase">Thông tin chung</h3>
+                                </div>
 
-                        <div class="info">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <strong>Mã Khách hàng: </strong>
-                                            <span>KH1234567</span>
-                                        </li>
-                                        <li>
-                                            <strong>Tên khách hàng: </strong>
-                                            <span>Phạm Kỳ Khôi</span>
-                                        </li>
-                                        <li>
-                                            <strong>Loại khách hàng: </strong>
-                                            <span>VIP</span>
-                                        </li>
-                                        <li>
-                                            <strong>CMND: </strong>
-                                            <span>145 771 835</span>
-                                        </li>
-                                        <li>
-                                            <strong>Công nợ hiện tại: </strong>
-                                            <span>1,000,000 vnd</span>
-                                        </li>
-                                    </ul>
+                                <!-- widget-content -->
+                                <div class="widget-content">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6">
+                                            <ul class="cus-info">
+                                                <li>
+                                                    <strong>Mã khách hàng: </strong>
+                                                    <span>KH123456789</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Tên khách hàng: </strong>
+                                                    <span>Nguyễn Xuân Quỳnh</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Loại khách hàng: </strong>
+                                                    <span>VIP</span>
+                                                </li>
+                                                <li>
+                                                    <strong>CMND: </strong>
+                                                    <span>145 771 835</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Công nợ hiện tại: </strong>
+                                                    <span>1.000.000</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <ul class="cus-info">
+                                                <li>
+                                                    <strong>Địa chỉ: </strong>
+                                                    <span>Xuân Quan - Văn Giang - Hưng Yên</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Email: </strong>
+                                                    <span>nguyenxuanquynh2210vghy@gmail.com</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Điện thoại: </strong>
+                                                    <span>0977.936.507</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Chi chú: </strong>
+                                                    <span></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span class="clearfix visible-sm-block"></span>
+                                        <div class="col-md-4 col-sm-6">
+                                            <p>
+                                                <strong>Ảnh đại diện</strong>
+                                            </p>
+                                            <div style="width: 130px; height: 130px;">
+                                                <img src="assets/img/noavatar.png" alt="AVATAR" class="img-responsive"/>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-4">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <strong>Địa chỉ: </strong>
-                                            <span>Di Trạch - Hoài Đức - Hà Nội</span>
-                                        </li>
-                                        <li>
-                                            <strong>Email: </strong>
-                                            <span>phamkykhoi@gmail.com</span>
-                                        </li>
-                                        <li>
-                                            <strong>Điện thoại: </strong>
-                                            <span>0123.123.123</span>
-                                        </li>
-                                        <li>
-                                            <strong>CMND: </strong>
-                                            <span>145 771 835</span>
-                                        </li>
-                                        <li>
-                                            <strong>Ghi chú: </strong>
-                                            <span></span>
-                                        </li>
-                                    </ul>
+                            </div>
+
+                            <div class="widget">
+                                <!-- widget-heading -->
+                                <div class="widget-heading">
+                                    <h3 class="title text-uppercase">Thông tin công ty</h3>
                                 </div>
-                                <div class="col-sm-4">
-                                    <h5>Ảnh đại diện</h5>
-                                    <div style="width: 133px; height: 133px;">
-                                        <img src="assets/img/noavatar.png" alt="AVATAR" class="img-responsive"/>
+
+                                <!-- widget-content -->
+                                <div class="widget-content">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6">
+                                            <ul class="cus-info">
+                                                <li>
+                                                    <strong>Tên công ty: </strong>
+                                                    <span>Công ty TNHH một hành viên XYZ</span>
+                                                </li>
+                                                <li>
+                                                    <strong>MST: </strong>
+                                                    <span>123 123 123 123 123</span>
+                                                </li>
+                                                <li>
+                                                    <strong>FAX: </strong>
+                                                    <span>0123 123 123</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Đi động: </strong>
+                                                    <span>123 123 123 </span>
+                                                </li>
+                                                <li>
+                                                    <strong>Máy bàn: </strong>
+                                                    <span>234 234 234</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <ul class="cus-info">
+                                                <li>
+                                                    <strong>Email: </strong>
+                                                    <span>tanphat@gmail.com</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Website: </strong>
+                                                    <span>http://tanphat.vn/</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Loại công ty: </strong>
+                                                    <span>Công ty cổ phần thương mại</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Chi chú: </strong>
+                                                    <span>If you see the output of the above example in a laptop or desktop having screen or viewport width greater than or equal to 992px and less than 1200px you will find it has 4 rows where each row has 3 equal columns resulting in 3x4 grid layout.
+                                                    But just wait, the above example has a major alignment issue. If height of any column is taller than the other it doesn't clear properly and break the layout. To fix this, use the combination of a .clearfix class and the responsive utility classes.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span class="clearfix visible-sm-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="widget">
+                                <!-- widget-content -->
+                                <div class="widget-content">
+                                    <div class="cus-tabs">
+                                        <ul class="list-inline">
+                                            <li><a href="customer-info.html">Lịch sử mua hàng</a></li>
+                                            <li><a href="customer-chinhanh.html">Chi nhánh</a></li>
+                                            <li class="active"><a href="customer-nvkd.html">Nhân viên kinh doanh</a></li>
+                                            <li><a href="customer-congno.html">Công nợ</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="cus-data">
+                                        <div class="table-responsive">
+                                            <table class="table table-condensed table-default table-bordered table-hover">
+                                                <thead>
+                                                    <tr class="active">
+                                                        <th class="text-center">STT</th>
+                                                        <th class="text-center">Ngày mua</th>
+                                                        <th class="text-center">Mã hàng hóa</th>
+                                                        <th>Tên hàng hóa</th>
+                                                        <th class="text-center">Số lượng</th>
+                                                        <th>Đơn giá</th>
+                                                        <th>Thành tiền</th>
+                                                        <th>Mua tại kho</th>
+                                                        <th>Nhân viên kinh doanh</th>
+                                                        <th>Mã hóa đơn</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">11/11/2015</td>
+                                                        <td class="text-center">PRO001</td>
+                                                        <td>Laptop Dell 001</td>
+                                                        <td class="text-center">10</td>
+                                                        <td>1,000,000</td>
+                                                        <td>10,000,000</td>
+                                                        <td>...</td>
+                                                        <td>...</td>
+                                                        <td>BILL001</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- widget-footer -->
+                                <div class="widget-footer">
+                                    <div class="text-center">
+                                        <ul class="pagination">
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="section">
-                        <div class="title">
-                            <h3>Thông tin công ty</h3>
-                            <a href="javscript:;" class="pull-right">
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                        </div>
-
-                        <div class="info">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <strong>Tên công ty: </strong>
-                                            <span>Công ty TNHH một thành viên XYZ</span>
-                                        </li>
-                                        <li>
-                                            <strong>MST: </strong>
-                                            <span>234898293842934</span>
-                                        </li>
-                                        <li>
-                                            <strong>FAX: </strong>
-                                            <span>234898293842934</span>
-                                        </li>
-                                        <li>
-                                            <strong>Di động: </strong>
-                                            <span>9145 771 835</span>
-                                        </li>
-                                        <li>
-                                            <strong>Máy bàn: </strong>
-                                            <span>043 234 234</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-4">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <strong>Email: </strong>
-                                            <span>Tanphat@gmail.com</span>
-                                        </li>
-                                        <li>
-                                            <strong>Websites: </strong>
-                                            <span>http://tanphat.vn/</span>
-                                        </li>
-                                        <li>
-                                            <strong>Loại công ty: </strong>
-                                            <span>CÔNG TY CỔ PHẦN THƯƠNG MẠI</span>
-                                        </li>
-                                        <li>
-                                            <strong>Ghi chú: </strong>
-                                            <span>You asked, Font Awesome delivers with 30 shiny new icons in version 4.6. Want to request new icons? Here's how. Need vectors or want to use on the desktop? Check the cheatsheet.</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <div class="tab-menu">
-                            <ul class="nav nav-pills">
-                                <li><a href="customer-info.html">Lịch sửa mua hàng</a></li>
-                                <li><a href="customer-chinhanh.html">Chi nhánh</a></li>
-                                <li class="active"><a href="customer-nvkd.html">Nhân viên kinh doanh</a></li>
-                                <li><a href="customer-congno.html">Công nợ</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="tab-content">
-                            <div class="table-responsive">
-                                <table class="table table-default table-bordered">
-                                    <thead>
-                                        <tr class="active">
-                                            <th class="text-center">STT</th>
-                                            <th>Tên nhân viên KD</th>
-                                            <th>Số điện thoại</th>
-                                            <th>Chi nhánh</th>
-                                            <th>Số lần mua hàng</th>
-                                            <th>Tổng tiền</th>
-                                            <th>Đã thu</th>
-                                            <th>Còn nợ</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Nguyễn Văn A</td>
-                                            <td>0123,123,123</td>
-                                            <td>số 12 Hồ Tùng Mậu</td>
-                                            <td>12</td>
-                                            <td>123,000,000</td>
-                                            <td>100,000,000</td>
-                                            <td>23,000,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Nguyễn Văn A</td>
-                                            <td>0123,123,123</td>
-                                            <td>số 12 Hồ Tùng Mậu</td>
-                                            <td>12</td>
-                                            <td>123,000,000</td>
-                                            <td>100,000,000</td>
-                                            <td>23,000,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Nguyễn Văn A</td>
-                                            <td>0123,123,123</td>
-                                            <td>số 12 Hồ Tùng Mậu</td>
-                                            <td>12</td>
-                                            <td>123,000,000</td>
-                                            <td>100,000,000</td>
-                                            <td>23,000,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Nguyễn Văn A</td>
-                                            <td>0123,123,123</td>
-                                            <td>số 12 Hồ Tùng Mậu</td>
-                                            <td>12</td>
-                                            <td>123,000,000</td>
-                                            <td>100,000,000</td>
-                                            <td>23,000,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Nguyễn Văn A</td>
-                                            <td>0123,123,123</td>
-                                            <td>số 12 Hồ Tùng Mậu</td>
-                                            <td>12</td>
-                                            <td>123,000,000</td>
-                                            <td>100,000,000</td>
-                                            <td>23,000,000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="text-center">
-                                <ul class="pagination">
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <!-- /#customer-content -->
-
-                <!-- #customer-footer -->
-                <div id="customer-footer"></div>
-                <!-- /#customer-footer -->
             </div>
         </div>
+        <!-- /#content -->
+
+        <!-- footer -->
+        <footer>
+            <p class="text-center">Thời gian xử lý: 0.3234s</p>
+            <p class="text-center">&copy; tanphat.vn</p>
+        </footer>
+        <!-- /footer -->
     </div>
 
-    <!-- Footer -->
-    <div id="footer" class="text-center">
-        <p>Thời gian xử lý: 0.5s</p>
-        <p>&copy; Tân phát</p>
-    </div>
-
-    <!-- Scroll button -->
-    <a href="javascript:;" id="scrollTop" class="btn btn-info">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-    <a href="javascript:;" id="scrollBottom" class="btn btn-info">
-        <i class="fa fa-arrow-down"></i>
-    </a>
-
-    <!-- jQuery -->
+    <!-- jQuery, Bootstrap JavaScript -->
     <script src="assets/js/jquery-1.11.1.min.js"></script>
-    <!-- Bootstrap JavaScript -->
     <script src="bs337/js/bootstrap.min.js"></script>
     <!-- Customers -->
     <script src="assets/js/common.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            makeMenuMobile();
+            scrollTop();
+            showTableData('test');
+        })
+    </script>
 </body>
 </html>

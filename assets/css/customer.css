@@ -1,146 +1,118 @@
-/* Customer page --------------------------------*/
-#customer {
-    min-height: 300px;
-    border-radius: 4px;
-    /*box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);*/
+/* #customer ----------------------------------------------------------------*/
+#customer .widget {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-#customer-header {
-    padding: 10px;
-    border-radius: 4px;
+.cus-heading {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 0 10px;
     background: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
-    z-index: -1;
 }
 
-#customer-header h1 {
-    font-size: 18px;
-    margin-top: 5px;
-    margin-right: 10px;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-#customer-header .form-control {
-    width: 200px;
-    display: inline-block;
-}
-
-#customer-content .section {
-    padding: 10px;
-    margin-top: 13px;
-    background: #ffffff;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
-}
-
-#customer-content .section .title {
-    padding: 10px;
-    background: #1799a3;
-    color: #ffffff;
-}
-
-#customer-content .section .title h3 {
-    margin-top: 0;
-    margin-bottom: 0;
+.cus-heading h1 {
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    line-height: 45px;
     font-size: 15px;
-    text-transform: uppercase;
+    font-weight: bold;
     display: inline-block;
 }
 
-#customer-content .section .title a {
+.cus-heading input {
+    width: 200px;
+    border: 1px solid #bbbbbb;
+    outline-color: #1a9dcc;
+}
+
+.cus-heading a {
+    float: right;
+    margin-top: 7px;
+}
+
+.cus-info li {
+    padding: 5px 0;
+}
+
+.cus-tabs {
+    margin-bottom: 20px;
+}
+
+.cus-tabs > ul > li > a {
+    padding: 7px 10px;
+    color: #333333;
+    display: inline-block;
+}
+
+.cus-tabs > ul > li > a:hover,
+.cus-tabs > ul > li.active > a {
+    background: #1a9dcc;
+    text-decoration: none;
     color: #ffffff;
 }
 
-#customer-content .section .info ul {
-    padding: 10px;
+.cus-form .form-group input,
+.cus-form .form-group select {
+    margin: 3px 0;
 }
 
-#customer-content .section .info ul li {
-    padding: 7px 0;
-}
-
-#customer-content .section .info .info-header {
-    padding: 10px 0 10px 0;
-}
-
-#customer-content .section .info .info-header .btn-group {
-    margin-bottom: 5px;
-}
-
-#customer-content .section .tab-menu {
-    margin-bottom: 10px;
-}
-
-#customer-content .section .tab-menu .nav li.active a {
-    background: #1799a3;
-}
-
-#myVoucher {
-    margin: auto;
+.cus-modal .modal-dialog {
     width: 80%;
 }
 
-#myVoucher .modal-dialog {
-    width: 100%;
-}
-
-#myVoucher .modal-dialog .modal-content .modal-header .modal-title {
-    display: inline-block;
-}
-
-#myVoucher .modal-dialog .modal-content .modal-body form {
+.cus-modal .modal-dialog .modal-body form {
     margin-bottom: 15px;
 }
 
-@media (max-width: 1024px) {
-
-}
-
-@media (min-width: 1200px) {
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
+.cus-modal .modal-dialog .modal-body form input {
+    margin-bottom: 3px;
 }
 
 @media (max-width: 767px) {
-    #customer-header {
+    .cus-heading {
+        height: 125px;
         text-align: center;
     }
 
-    #customer-header .btn-container {
-        margin-top: 7px;
+    .cus-heading input {
+        width: 100%;
         text-align: center;
+        margin-top: 3px;
     }
 
-    #customer-content .section .nav li {
+    .cus-heading a {
+        float: none;
+        margin-top: 5px;
+    }
+
+    .cus-tabs > ul > li {
+        width: 100%;
+        margin-bottom: 2px;
+    }
+
+    .cus-tabs > ul > li > a {
         width: 100%;
     }
 
-    #customer-content .section .tab-content form .form-group div {
-        margin-bottom: 5px;
+    .cus-modal .modal-dialog {
+        width: 95%;
     }
 
-    #myVoucher {
-        margin: auto;
-        width: 97%;
+    .cus-modal .modal-dialog .modal-body form {
+        text-align: center;
     }
 
-    #myVoucher .modal-dialog .modal-content .modal-body form input {
-        margin: 5px 0;
+    .cus-form .form-group {
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
-    #customer-content .section .info ul li strong {
-        display: block;
-    }
+
 }
 
 @media (max-width: 320px) {
