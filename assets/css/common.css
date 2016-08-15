@@ -14,9 +14,18 @@ a {
     text-decoration: none !important;
 }
 
+.glyphicon {
+    top: 2px !important;
+}
+
 h3 {
     margin-top: 0px;
     margin-bottom: 20px;
+}
+
+a.user-setting {
+    border-radius: 3px;
+    font-weight: 600 !important;
 }
 
 #wrapper {
@@ -212,6 +221,11 @@ header .menu ul.submenu > li > a:hover {
 
 #tasks .menu ul li a:hover {
     background: #337ab7;
+    text-decoration: none;
+}
+
+#tasks .menu ul li a.active {
+    background: #1a9dcc;
     text-decoration: none;
 }
 
