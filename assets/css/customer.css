@@ -34,6 +34,7 @@
     border: 1px solid #bbbbbb;
     outline-color: #1a9dcc;
     font-size: 14px;
+    border-radius: 0;
 }
 
 .cus-heading a {
@@ -41,10 +42,21 @@
     margin-top: 7px;
 }
 
+.cus-tabs {
+    margin-bottom: 20px;
+}
+
+.cus-tabs .nav-tabs li a {
+    border-radius: 0;
+    font-weight: 600;
+}
+
 .cus-info > li {
     float: left;
     width: 100%;
-    padding: 3px 0;
+    padding: 5px 3px;
+    border: 1px dashed #cccccc;
+    margin-bottom: 5px;
 }
 
 .cus-info > li > strong {
@@ -56,23 +68,6 @@
 .cus-info > li > div {
     float: left;
     width: 66%;
-}
-
-.cus-tabs {
-    margin-bottom: 20px;
-}
-
-.cus-tabs > ul > li > a {
-    padding: 7px 10px;
-    color: #333333;
-    display: inline-block;
-}
-
-.cus-tabs > ul > li > a:hover,
-.cus-tabs > ul > li.active > a {
-    background: #1a9dcc;
-    text-decoration: none;
-    color: #ffffff;
 }
 
 .cus-form .form-group input,
@@ -140,15 +135,6 @@
     }
 
     .cus-info > li > div {
-        width: 100%;
-    }
-
-    .cus-tabs > ul > li {
-        width: 49.5%;
-        margin-bottom: 2px;
-    }
-
-    .cus-tabs > ul > li > a {
         width: 100%;
     }
 

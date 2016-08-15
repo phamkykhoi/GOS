@@ -4,12 +4,11 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-    <title>customer-list</title>
-
-    <!-- Bootstrap, Font-awesome -->
+    <title>user-list</title>
     <link rel="stylesheet" href="bs337/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="fa463/css/font-awesome.min.css"/>
+    <!-- Google fonts -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400&subset=latin,vietnamese' rel='stylesheet' type='text/css'> -->
     <!-- Customers -->
     <link rel="stylesheet" href="assets/css/support.css"/>
     <link rel="stylesheet" href="assets/css/common.css"/>
@@ -22,6 +21,7 @@
     <div id="menuMobile">
         <h4 class="title">HỆ THỐNG</h4>
         <nav class="menu" references="menu-system"></nav>
+
         <h4 class="title">Nghiệp vụ</h4>
         <nav class="menu" references="menu-tasks"></nav>
     </div>
@@ -58,7 +58,7 @@
                         <li><a href="#">Garas <i class="glyphicon glyphicon-sound-dolby"></i></a></li>
                         <li><a href="#">Thiết lập <span class="glyphicon glyphicon-cog"></span></a></li>
                         <li>
-                            <a href="javascript:;" class="user-setting">Trần Đức Liêm  <span class="caret"></span></a>
+                            <a href="javascript::void(0)" class="user-setting">Trần Đức Liêm  <span class="caret"></span></a>
                             <ul class="submenu">
                                 <li><a href="#"><i class="fa fa-unlock"> </i> Tài khoản</a></li>
                                 <li><a href="#"><i class="fa fa-wrench"> </i> Cài đặt</a></li>
@@ -140,12 +140,12 @@
         <!-- #content -->
         <div id="content">
             <div class="container-fluid">
-                <h3>Quản lý khách hàng</h3>
+                <h3>Quản lý người dùng</h3>
                 <div class="row">
                     <div class="col-md-3">
                         <div id="sidebar">
                             <div class="sb-heading">
-                                <h3 class="title text-uppercase">Tìm kiếm khách hàng</h3>
+                                <h3 class="title text-uppercase">Thêm mới người dùng</h3>
                                 <a href="javascript:;" class="toggle-content" references="#sidebar .sb-content" display="1">
                                     <i class="fa fa-angle-down"></i>
                                 </a>
@@ -163,11 +163,6 @@
                                         <span class="text">Theo chi nhánh</span>
                                     </label>
                                     <select name="" id="" class="form-control">
-                                        <option value="">Chọn chi nhánh</option>
-                                        <option value="">Chọn chi nhánh</option>
-                                        <option value="">Chọn chi nhánh</option>
-                                        <option value="">Chọn chi nhánh</option>
-                                        <option value="">Chọn chi nhánh</option>
                                         <option value="">Chọn chi nhánh</option>
                                     </select>
                                 </div>
@@ -189,23 +184,37 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="lineside">
-                                        <span class="text">Theo nhân viên kinh doanh</span>
+                                        <span class="text">Theo hàng hóa</span>
                                     </label>
-                                    <select name="" id="" class="form-control">
-                                        <option value="">Chọn nhân viên kinh doanh</option>
-                                    </select>
+                                    <div class="radio">
+                                        <label for="test1">
+                                            <input type="radio" id="test1" name="test"> Đang hết hàng
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label for="">
+                                            <input type="radio" name="test"> Đang còn hàng trong kho
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label for="">
+                                            <input type="radio" name="test"> Đang hết khuyến mãi
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label for="">
+                                            <input type="radio" name="test"> Đang hết hạn sử dụng
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label for="">
+                                            <input type="radio" name="test"> Chưa hết hạn
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="lineside">
-                                        <span class="text">Theo sự kiện khuyến mãi</span>
-                                    </label>
-                                    <select name="" id="" class="form-control">
-                                        <option value="">Chọn sự kiện</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="lineside">
-                                        <span class="text">Theo công nợ</span>
+                                        <span class="text">Theo khoảng giá</span>
                                     </label>
                                     <div class="progress">
                                         <div class="progress-bar" style="width: 60%;">
@@ -222,13 +231,13 @@
                         <div class="widget">
                             <!-- widget-heading -->
                             <div class="widget-heading">
-                                <h1 class="title text-uppercase">Danh sách khách hàng</h1>
-                                <a href="javascript:;" class="toggle-content" references="#customerList" display="1">
+                                <h1 class="title text-uppercase">Danh sách người dùng</h1>
+                                <a href="javascript:;" class="toggle-content" references="#userList" display="1">
                                     <i class="fa fa-angle-down"></i>
                                 </a>
                             </div>
 
-                            <div id="customerList">
+                            <div id="userList">
                                 <!-- widget-tools -->
                                 <div class="widget-tools">
                                     <div class="row">
@@ -247,7 +256,7 @@
                                         </div>
                                         <div class="col-sm-6 text-right">
                                             <div class="tool">
-                                                <a href="javascript:;" class="btn btn-sm">
+                                                <a href="#newProduct" role="button" class="btn btn-sm" data-toggle="modal">
                                                     <i class="fa fa-plus"></i> Thêm mới
                                                 </a>
                                             </div>
@@ -294,208 +303,198 @@
                                                 <tr class="active">
                                                     <th class="text-center">STT</th>
                                                     <th class="text-center">Mã</th>
-                                                    <th>Họ tên</th>
-                                                    <th>Địa chỉ</th>
-                                                    <th>Điện thoại</th>
-                                                    <th>Email</th>
-                                                    <th class="text-center">Thao tác</th>
+                                                    <th>Tên sản phẩm</th>
+                                                    <th class="text-center">ĐVT</th>
+                                                    <th>Đơn giá</th>
+                                                    <th>Số lượng</th>
+                                                    <th>Khuyễn mãi</th>
+                                                    <th>Thành tiền</th>
+                                                    <th class="text-center">HSD</th>
+                                                    <th>Thao tác</th>
                                                 </tr>
                                             </thead>
+
                                             <tbody>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
+                                                </tr>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">KH001</td>
-                                                    <td>Nguyễn Văn Quỳnh</td>
-                                                    <td>Hưng Yên</td>
-                                                    <td>0977.936.507</td>
-                                                    <td>ngquynh@gmail.com</td>
-                                                    <td class="text-center">
-                                                        <a href="customer-info.html" class="btn btn-info btn-xs">
-                                                            xem
-                                                        </a>
-                                                    </td>
+                                                    <td class="text-center">SP0123</td>
+                                                    <td>Samsung Galaxy S3</td>
+                                                    <td class="text-center">Cái</td>
+                                                    <td>2,000,000</td>
+                                                    <td>100</td>
+                                                    <td>5%</td>
+                                                    <td>190,000,000</td>
+                                                    <td class="text-center">01/12/2019</td>
+                                                    <td class="text-center"> ... </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -525,7 +524,6 @@
         <!-- footer -->
         <footer>
             <p class="text-center">Thời gian xử lý: 0.3234s</p>
-            <p class="text-center">&copy; tanphat.vn</p>
         </footer>
         <!-- /footer -->
     </div>
@@ -534,7 +532,6 @@
     <script src="assets/js/jquery-1.11.1.min.js"></script>
     <script src="bs337/js/bootstrap.min.js"></script>
     <!-- Customers -->
-    <!-- <script src="assets/js/defined.js"></script> -->
     <script src="assets/js/defined.js"></script>
     <script src="assets/js/common.js"></script>
 </body>
